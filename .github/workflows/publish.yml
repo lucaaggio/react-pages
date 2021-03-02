@@ -25,3 +25,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci 
     - run: npm run build
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GH_TOKEN }}
+        publish_dir: ./build
