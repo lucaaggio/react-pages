@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-const message = process.env.REACT_APP_MESSAGE || "Manca un dato.."
+const message = process.env.REACT_APP_MESSAGE || "Manca un dato..."
 
 function App() {
   return (
@@ -20,8 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-    
+    </div>    
   );
 }
 
